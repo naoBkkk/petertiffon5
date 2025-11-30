@@ -1,0 +1,534 @@
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+--connect--
+
+
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 29 | Scripts: 9 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.Petertiffon
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Petertiffon]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.Petertiffon.ImageLabel
+G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["Image"] = [[rbxassetid://85750000985789]];
+G2L["2"]["Size"] = UDim2.new(0, 448, 0, 507);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.06703, 0, 0.13084, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextBox
+G2L["3"] = Instance.new("TextBox", G2L["2"]);
+G2L["3"]["TextStrokeTransparency"] = 0.8;
+G2L["3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["TextStrokeColor3"] = Color3.fromRGB(0, 255, 43);
+G2L["3"]["TextSize"] = 24;
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["MultiLine"] = true;
+G2L["3"]["ClearTextOnFocus"] = false;
+G2L["3"]["Size"] = UDim2.new(0, 429, 0, 336);
+G2L["3"]["Position"] = UDim2.new(0.02009, 0, 0.01972, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[]];
+G2L["3"]["BackgroundTransparency"] = 0.6;
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextButton
+G2L["4"] = Instance.new("TextButton", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 34;
+G2L["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["BackgroundTransparency"] = 0.6;
+G2L["4"]["Size"] = UDim2.new(0, 211, 0, 35);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[EXECUTE]];
+G2L["4"]["Position"] = UDim2.new(0.50446, 0, 0.70809, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextButton
+G2L["6"] = Instance.new("TextButton", G2L["2"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 34;
+G2L["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["BackgroundTransparency"] = 0.6;
+G2L["6"]["Size"] = UDim2.new(0, 211, 0, 35);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[CLEAR]];
+G2L["6"]["Position"] = UDim2.new(0.02009, 0, 0.70809, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextButton
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 34;
+G2L["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["BackgroundTransparency"] = 0.6;
+G2L["8"]["Size"] = UDim2.new(0, 381, 0, 27);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[Remote Abuser]];
+G2L["8"]["Position"] = UDim2.new(0.02009, 0, 0.93688, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.ImageLabel
+G2L["a"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["Image"] = [[rbxassetid://101097622034575]];
+G2L["a"]["Size"] = UDim2.new(0, 444, 0, 161);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Position"] = UDim2.new(0.00223, 0, 0.68245, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextButton
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 31;
+G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["BackgroundTransparency"] = 0.6;
+G2L["b"]["Size"] = UDim2.new(0, 42, 0, 27);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[>]];
+G2L["b"]["Position"] = UDim2.new(0.88393, 0, 0.93688, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["b"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.More
+G2L["e"] = Instance.new("Frame", G2L["2"]);
+G2L["e"]["Visible"] = false;
+G2L["e"]["BorderSizePixel"] = 2;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Size"] = UDim2.new(0, 233, 0, 504);
+G2L["e"]["Position"] = UDim2.new(1, 0, 0.00197, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(116, 255, 9);
+G2L["e"]["Name"] = [[More]];
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton
+G2L["f"] = Instance.new("TextButton", G2L["e"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextSize"] = 22;
+G2L["f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["BackgroundTransparency"] = 0.6;
+G2L["f"]["Size"] = UDim2.new(0, 200, 0, 23);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[Teleport]];
+G2L["f"]["Position"] = UDim2.new(0.06867, 0, 0.23016, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["f"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextBox
+G2L["11"] = Instance.new("TextBox", G2L["e"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["ClearTextOnFocus"] = false;
+G2L["11"]["PlaceholderText"] = [[== PLAYER NAME HERE ==]];
+G2L["11"]["Size"] = UDim2.new(0, 200, 0, 29);
+G2L["11"]["Position"] = UDim2.new(0.06867, 0, 0.15278, 0);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[]];
+G2L["11"]["BackgroundTransparency"] = 0.6;
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton
+G2L["12"] = Instance.new("TextButton", G2L["e"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 22;
+G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["BackgroundTransparency"] = 0.6;
+G2L["12"]["Size"] = UDim2.new(0, 200, 0, 23);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[Toggle Fly]];
+G2L["12"]["Position"] = UDim2.new(0.06867, 0, 0.38492, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.ImageLabel
+G2L["14"] = Instance.new("ImageLabel", G2L["e"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["Image"] = [[rbxassetid://137809285501059]];
+G2L["14"]["Size"] = UDim2.new(0, 158, 0, 45);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Position"] = UDim2.new(0.1588, 0, 0.01786, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.Folder
+G2L["15"] = Instance.new("Folder", G2L["e"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.Folder.Frame
+G2L["16"] = Instance.new("Frame", G2L["15"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["16"]["Size"] = UDim2.new(0, 233, 0, -2);
+G2L["16"]["Position"] = UDim2.new(0, 0, 0.11111, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.Folder.Frame
+G2L["17"] = Instance.new("Frame", G2L["15"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["17"]["Size"] = UDim2.new(0, 233, 0, -2);
+G2L["17"]["Position"] = UDim2.new(0, 0, 0.33333, 0);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.Folder.Frame
+G2L["18"] = Instance.new("Frame", G2L["15"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["18"]["Size"] = UDim2.new(0, 233, 0, -2);
+G2L["18"]["Position"] = UDim2.new(0, 0, 0.4881, 0);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextLabel
+G2L["19"] = Instance.new("TextLabel", G2L["e"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["TextStrokeTransparency"] = 0.65;
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 39;
+G2L["19"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["19"]["TextStrokeColor3"] = Color3.fromRGB(112, 255, 72);
+G2L["19"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["19"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Size"] = UDim2.new(0, 82, 0, 44);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[Soon]];
+G2L["19"]["Position"] = UDim2.new(0.32189, 0, 0.7004, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextLabel
+G2L["1b"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1b"]["TextStrokeTransparency"] = 0.73;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextSize"] = 18;
+G2L["1b"]["TextStrokeColor3"] = Color3.fromRGB(59, 255, 15);
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["BackgroundTransparency"] = 1;
+G2L["1b"]["Size"] = UDim2.new(0, 170, 0, 29);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[VER]];
+G2L["1b"]["Position"] = UDim2.new(0, 0, 1, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextLabel.LocalScript
+G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextLabel.LocalScript.Value
+G2L["1d"] = Instance.new("StringValue", G2L["1c"]);
+G2L["1d"]["Value"] = [[0.4]];
+
+
+-- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
+local function C_5()
+local script = G2L["5"];
+	local button = script.Parent
+	local textbox = button.Parent.TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		local code = textbox.Text
+		if code and code ~= "" then
+			local func = loadstring(code)
+			if func then
+				task.spawn(func)
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_5);
+-- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
+local function C_7()
+local script = G2L["7"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text=""
+	end)
+end;
+task.spawn(C_7);
+-- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
+local function C_9()
+local script = G2L["9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/naoBkkk/R.E./refs/heads/main/F"))()
+	end)
+end;
+task.spawn(C_9);
+-- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
+local function C_c()
+local script = G2L["c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.More.Visible==true then
+			script.Parent.Parent.More.Visible=false
+		else
+			script.Parent.Parent.More.Visible=true
+		end
+	end)
+end;
+task.spawn(C_c);
+-- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
+local function C_d()
+local script = G2L["d"];
+	while true do
+		if script.Parent.Parent.More.Visible==true then
+			script.Parent.Text="<"
+		else
+			script.Parent.Text=">"
+		end
+		
+		wait(0.1)
+	end
+end;
+task.spawn(C_d);
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+local function C_10()
+local script = G2L["10"];
+	s=script.Parent.Parent.TextBox
+	script.Parent.MouseButton1Click:Connect(function()
+		local plr = game.Players.LocalPlayer
+		local hrp = plr.Character:WaitForChild("HumanoidRootPart")
+		local n = s.Text
+		for _, p in pairs(game.Players:GetPlayers()) do
+			if p.Name:lower():find(n:lower()) and p.Character and p.Character:FindFirstChild("HumanoidRootPart") then
+				hrp.CFrame = p.Character.HumanoidRootPart.CFrame + Vector3.new(0,3,0)
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_10);
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+local function C_13()
+local script = G2L["13"];
+	local plr = game.Players.LocalPlayer
+	local char = plr.Character or plr.CharacterAdded:Wait()
+	local hum = char:WaitForChild("Humanoid")
+	local hrp = char:WaitForChild("HumanoidRootPart")
+	
+	local flying = false
+	local speed = 60
+	local keys = {W=false,A=false,S=false,D=false}
+	
+	local UIS = game:GetService("UserInputService")
+	local RS = game:GetService("RunService")
+	
+	local button = script.Parent
+	
+	local function startFly()
+		flying = true
+		hum.PlatformStand = true
+		local bv = Instance.new("BodyVelocity", hrp)
+		bv.MaxForce = Vector3.new(1e9,1e9,1e9)
+		bv.Velocity = Vector3.zero
+	
+		RS.RenderStepped:Connect(function()
+			if flying then
+				local cam = workspace.CurrentCamera.CFrame
+				local move = Vector3.zero
+				if keys.W then move += cam.LookVector end
+				if keys.S then move -= cam.LookVector end
+				if keys.A then move -= cam.RightVector end
+				if keys.D then move += cam.RightVector end
+				bv.Velocity = move * speed
+			end
+		end)
+	end
+	
+	local function stopFly()
+		flying = false
+		hum.PlatformStand = false
+		if hrp:FindFirstChild("BodyVelocity") then
+			hrp.BodyVelocity:Destroy()
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		if flying then stopFly() else startFly() end
+	end)
+	
+	UIS.InputBegan:Connect(function(i) if keys[i.KeyCode.Name] ~= nil then keys[i.KeyCode.Name] = true end end)
+	UIS.InputEnded:Connect(function(i) if keys[i.KeyCode.Name] ~= nil then keys[i.KeyCode.Name] = false end end)
+	
+end;
+task.spawn(C_13);
+-- StarterGui.Petertiffon.ImageLabel.LocalScript
+local function C_1a()
+local script = G2L["1a"];
+	script.Parent.Active=true
+	script.Parent.Draggable=true
+end;
+task.spawn(C_1a);
+-- StarterGui.Petertiffon.ImageLabel.TextLabel.LocalScript
+local function C_1c()
+local script = G2L["1c"];
+	script.Parent.Text="==Version: "..script.Value.Value.." =="
+end;
+task.spawn(C_1c);
+
+return G2L["1"], require;
