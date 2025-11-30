@@ -94,7 +94,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 29 | Scripts: 9 | Modules: 0 | Tags: 0
+-- Instances: 42 | Scripts: 15 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Petertiffon
@@ -230,7 +230,6 @@ G2L["d"] = Instance.new("LocalScript", G2L["b"]);
 
 -- StarterGui.Petertiffon.ImageLabel.More
 G2L["e"] = Instance.new("Frame", G2L["2"]);
-G2L["e"]["Visible"] = false;
 G2L["e"]["BorderSizePixel"] = 2;
 G2L["e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["e"]["Size"] = UDim2.new(0, 233, 0, 504);
@@ -337,54 +336,171 @@ G2L["18"]["Position"] = UDim2.new(0, 0, 0.4881, 0);
 G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
--- StarterGui.Petertiffon.ImageLabel.More.TextLabel
-G2L["19"] = Instance.new("TextLabel", G2L["e"]);
-G2L["19"]["TextWrapped"] = true;
-G2L["19"]["TextStrokeTransparency"] = 0.65;
+-- StarterGui.Petertiffon.ImageLabel.More.Folder.Frame
+G2L["19"] = Instance.new("Frame", G2L["15"]);
 G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["TextSize"] = 39;
-G2L["19"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["19"]["TextStrokeColor3"] = Color3.fromRGB(112, 255, 72);
-G2L["19"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["19"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["BackgroundTransparency"] = 1;
-G2L["19"]["Size"] = UDim2.new(0, 82, 0, 44);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["19"]["Size"] = UDim2.new(0, 233, 0, -2);
+G2L["19"]["Position"] = UDim2.new(0, 0, 0.62698, 0);
 G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Text"] = [[Soon]];
-G2L["19"]["Position"] = UDim2.new(0.32189, 0, 0.7004, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton
+G2L["1a"] = Instance.new("TextButton", G2L["e"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 22;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["BackgroundTransparency"] = 0.6;
+G2L["1a"]["Size"] = UDim2.new(0, 200, 0, 23);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Toggle Noclip]];
+G2L["1a"]["Position"] = UDim2.new(0.06867, 0, 0.53373, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.Fstatus
+G2L["1c"] = Instance.new("TextLabel", G2L["e"]);
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextSize"] = 18;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Size"] = UDim2.new(0, 200, 0, 9);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[OFF]];
+G2L["1c"]["Name"] = [[Fstatus]];
+G2L["1c"]["Position"] = UDim2.new(0.06867, 0, 0.44841, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.Fstatus.LocalScript
+G2L["1d"] = Instance.new("LocalScript", G2L["1c"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.Nstatus
+G2L["1e"] = Instance.new("TextLabel", G2L["e"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextSize"] = 18;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["BackgroundTransparency"] = 1;
+G2L["1e"]["Size"] = UDim2.new(0, 200, 0, 9);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[OFF]];
+G2L["1e"]["Name"] = [[Nstatus]];
+G2L["1e"]["Position"] = UDim2.new(0.06867, 0, 0.59127, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.Nstatus.LocalScript
+G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.ImageLabel
+G2L["20"] = Instance.new("ImageLabel", G2L["e"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["Image"] = [[rbxassetid://127996278033506]];
+G2L["20"]["Size"] = UDim2.new(0, 179, 0, 96);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["BackgroundTransparency"] = 1;
+G2L["20"]["Position"] = UDim2.new(0.11588, 0, 0.58929, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton
+G2L["21"] = Instance.new("TextButton", G2L["e"]);
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextSize"] = 22;
+G2L["21"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["BackgroundTransparency"] = 0.6;
+G2L["21"]["Size"] = UDim2.new(0, 200, 0, 23);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[Sky]];
+G2L["21"]["Position"] = UDim2.new(0.06867, 0, 0.84325, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+G2L["22"] = Instance.new("LocalScript", G2L["21"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton
+G2L["23"] = Instance.new("TextButton", G2L["e"]);
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextSize"] = 22;
+G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23"]["BackgroundTransparency"] = 0.6;
+G2L["23"]["Size"] = UDim2.new(0, 200, 0, 23);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[Decal Spam]];
+G2L["23"]["Position"] = UDim2.new(0.06867, 0, 0.76389, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+G2L["24"] = Instance.new("LocalScript", G2L["23"]);
+
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton
+G2L["25"] = Instance.new("TextButton", G2L["e"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 22;
+G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["BackgroundTransparency"] = 0.6;
+G2L["25"]["Size"] = UDim2.new(0, 200, 0, 23);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Particles]];
+G2L["25"]["Position"] = UDim2.new(0.06867, 0, 0.92659, 0);
+
+
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+G2L["26"] = Instance.new("LocalScript", G2L["25"]);
+
 
 
 -- StarterGui.Petertiffon.ImageLabel.LocalScript
-G2L["1a"] = Instance.new("LocalScript", G2L["2"]);
+G2L["27"] = Instance.new("LocalScript", G2L["2"]);
 
 
 
 -- StarterGui.Petertiffon.ImageLabel.TextLabel
-G2L["1b"] = Instance.new("TextLabel", G2L["2"]);
-G2L["1b"]["TextStrokeTransparency"] = 0.73;
-G2L["1b"]["BorderSizePixel"] = 0;
-G2L["1b"]["TextSize"] = 18;
-G2L["1b"]["TextStrokeColor3"] = Color3.fromRGB(59, 255, 15);
-G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b"]["BackgroundTransparency"] = 1;
-G2L["1b"]["Size"] = UDim2.new(0, 170, 0, 29);
-G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b"]["Text"] = [[VER]];
-G2L["1b"]["Position"] = UDim2.new(0, 0, 1, 0);
+G2L["28"] = Instance.new("TextLabel", G2L["2"]);
+G2L["28"]["TextStrokeTransparency"] = 0.73;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 18;
+G2L["28"]["TextStrokeColor3"] = Color3.fromRGB(59, 255, 15);
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["BackgroundTransparency"] = 1;
+G2L["28"]["Size"] = UDim2.new(0, 170, 0, 29);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[VER]];
+G2L["28"]["Position"] = UDim2.new(0, 0, 1, 0);
 
 
 -- StarterGui.Petertiffon.ImageLabel.TextLabel.LocalScript
-G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
+G2L["29"] = Instance.new("LocalScript", G2L["28"]);
 
 
 
 -- StarterGui.Petertiffon.ImageLabel.TextLabel.LocalScript.Value
-G2L["1d"] = Instance.new("StringValue", G2L["1c"]);
-G2L["1d"]["Value"] = [[0.4]];
+G2L["2a"] = Instance.new("StringValue", G2L["29"]);
+G2L["2a"]["Value"] = [[1.2]];
 
 
 -- StarterGui.Petertiffon.ImageLabel.TextButton.LocalScript
@@ -471,6 +587,7 @@ local script = G2L["13"];
 	local char = plr.Character or plr.CharacterAdded:Wait()
 	local hum = char:WaitForChild("Humanoid")
 	local hrp = char:WaitForChild("HumanoidRootPart")
+	local status = script.Parent.Parent.Fstatus
 	
 	local flying = false
 	local speed = 60
@@ -487,6 +604,7 @@ local script = G2L["13"];
 		local bv = Instance.new("BodyVelocity", hrp)
 		bv.MaxForce = Vector3.new(1e9,1e9,1e9)
 		bv.Velocity = Vector3.zero
+		status.Text="ON"
 	
 		RS.RenderStepped:Connect(function()
 			if flying then
@@ -503,6 +621,7 @@ local script = G2L["13"];
 	
 	local function stopFly()
 		flying = false
+		status.Text="OFF"
 		hum.PlatformStand = false
 		if hrp:FindFirstChild("BodyVelocity") then
 			hrp.BodyVelocity:Destroy()
@@ -518,18 +637,1187 @@ local script = G2L["13"];
 	
 end;
 task.spawn(C_13);
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+local function C_1b()
+local script = G2L["1b"];
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	local char = plr.Character or plr.CharacterAdded:Wait()
+	local status = script.Parent.Parent.Nstatus
+	
+	local noclip = false
+	local RS = game:GetService("RunService")
+	
+	btn.MouseButton1Click:Connect(function()
+		noclip = not noclip
+		status.Text = noclip and "ON" or "OFF"
+	end)
+	
+	RS.RenderStepped:Connect(function()
+		if noclip and char then
+			for _, part in ipairs(char:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = false
+				end
+			end
+		else
+			for _, part in ipairs(char:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = true
+				end
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_1b);
+-- StarterGui.Petertiffon.ImageLabel.More.Fstatus.LocalScript
+local function C_1d()
+local script = G2L["1d"];
+	while true do 
+		if script.Parent.Text=="OFF" then
+			script.Parent.TextColor=Color3.new(1, 0, 0)
+		end
+		wait()
+	end
+	
+	while true do 
+		if script.Parent.Text=="ON" then
+			script.Parent.TextColor=Color3.new(0.0156863, 1, 0)
+		end
+		wait()
+	end
+end;
+task.spawn(C_1d);
+-- StarterGui.Petertiffon.ImageLabel.More.Nstatus.LocalScript
+local function C_1f()
+local script = G2L["1f"];
+	while true do 
+		if script.Parent.Text=="OFF" then
+			script.Parent.TextColor=Color3.new(1, 0, 0)
+		end
+		wait()
+	end
+	
+	while true do 
+		if script.Parent.Text=="ON" then
+			script.Parent.TextColor=Color3.new(0.0156863, 1, 0)
+		end
+		wait()
+	end
+end;
+task.spawn(C_1f);
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+local function C_22()
+local script = G2L["22"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Sky(id)
+			e = char.HumanoidRootPart.CFrame.x
+			f = char.HumanoidRootPart.CFrame.y
+			g = char.HumanoidRootPart.CFrame.z
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
+					--spawn(function()
+					SetName(v,"Sky")
+					AddMesh(v)
+					--end)
+					--spawn(function()
+					SetMesh(v,"111891702759441")
+					SetTexture(v,id)
+					--end)
+					MeshResize(v,Vector3.new(10000,10000,10000))
+					SetLocked(v,true)
+				end
+			end
+		end
+		Sky("85750000985789")
+	end)
+end;
+task.spawn(C_22);
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+local function C_24()
+local script = G2L["24"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+		spam("85750000985789")
+	end)
+end;
+task.spawn(C_24);
+-- StarterGui.Petertiffon.ImageLabel.More.TextButton.LocalScript
+local function C_26()
+local script = G2L["26"];
+	script.Parent.MouseButton1Click:Connect(function()
+		--[[
+		WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+	]]
+		local player = game.Players.LocalPlayer
+	
+		local char = player.Character
+	
+		local tool
+	
+		for i,v in player:GetDescendants() do
+	
+			if v.Name == "SyncAPI" then		tool = v.Parent
+	
+			end
+	
+		end
+	
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+	
+			if v.Name == "SyncAPI" then
+	
+				tool = v.Parent
+	
+			end
+	
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		function _(args)
+	
+			remote:InvokeServer(unpack(args))
+	
+		end
+	
+		function SetCollision(part,boolean)
+	
+			local args = {
+	
+				[1] = "SyncCollision",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["CanCollide"] = boolean
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function SetAnchor(boolean,part)
+	
+			local args = {
+	
+				[1] = "SyncAnchor",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["Anchored"] = boolean
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function CreatePart(cf,parent)
+	
+			local args = {
+	
+				[1] = "CreatePart",
+	
+				[2] = "Normal",
+	
+				[3] = cf,
+	
+				[4] = parent
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function DestroyPart(part)
+	
+			local args = {
+	
+				[1] = "Remove",
+	
+				[2] = {
+	
+					[1] = part
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function MovePart(part,cf)
+	
+			local args = {
+	
+				[1] = "SyncMove",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["CFrame"] = cf
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function Resize(part,size,cf)
+	
+			local args = {
+	
+				[1] = "SyncResize",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["CFrame"] = cf,
+	
+						["Size"] = size
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function AddMesh(part)
+	
+			local args = {
+	
+				[1] = "CreateMeshes",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function SetMesh(part,meshid)
+	
+			local args = {
+	
+				[1] = "SyncMesh",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["MeshId"] = "rbxassetid://"..meshid
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function SetTexture(part, texid)
+	
+			local args = {
+	
+				[1] = "SyncMesh",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["TextureId"] = "rbxassetid://"..texid
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function SetName(part, stringg)
+	
+			local args = {
+	
+				[1] = "SetName",
+	
+				[2] = {
+	
+					[1] = part
+	
+				},
+	
+				[3] = stringg
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function MeshResize(part,size)
+	
+			local args = {
+	
+				[1] = "SyncMesh",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["Scale"] = size
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function Weld(part1, part2,lead)
+	
+			local args = {
+	
+				[1] = "CreateWelds",
+	
+				[2] = {
+	
+					[1] = part1,
+	
+					[2] = part2
+	
+				},
+	
+				[3] = lead
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function SetLocked(part,boolean)
+	
+			local args = {
+	
+				[1] = "SetLocked",
+	
+				[2] = {
+	
+					[1] = part
+	
+				},
+	
+				[3] = boolean
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function SetTrans(part,int)
+	
+			local args = {
+	
+				[1] = "SyncMaterial",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["Transparency"] = int
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function CreateSpotlight(part)
+	
+			local args = {
+	
+				[1] = "CreateLights",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["LightType"] = "SpotLight"
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function SyncLighting(part,brightness)
+	
+			local args = {
+	
+				[1] = "SyncLighting",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["LightType"] = "SpotLight",
+	
+						["Brightness"] = brightness
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function Color(part,color)
+	
+			local args = {
+	
+				[1] = "SyncColor",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["Color"] = color,
+	
+						["UnionColoring"] = false
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function SpawnDecal(part,side)
+	
+			local args = {
+	
+				[1] = "CreateTextures",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["Face"] = side,
+	
+						["TextureType"] = "Decal"
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		function AddDecal(part,asset,side)
+	
+			local args = {
+	
+				[1] = "SyncTexture",
+	
+				[2] = {
+	
+					[1] = {
+	
+						["Part"] = part,
+	
+						["Face"] = side,
+	
+						["TextureType"] = "Decal",
+	
+						["Texture"] = "rbxassetid://".. asset
+	
+					}
+	
+				}
+	
+			}
+	
+			_(args)
+	
+		end
+	
+		-- ðŸ”¹ Tambahan: daftar 3 ID decal
+	
+		local ids = {
+	
+			"85750000985789", -- ID 1
+	
+			"85750000985789", -- ID 2
+	
+			"85750000985789"  -- ID 3
+	
+		}
+	
+		while wait(0.1) do
+	
+			spawn(function()
+	
+				local e = char.HumanoidRootPart.CFrame.x + math.random(-100, 100)
+	
+				local f = char.HumanoidRootPart.CFrame.y
+	
+				local g = char.HumanoidRootPart.CFrame.z + math.random(-100, 100)
+	
+				CreatePart(CFrame.new(math.floor(e), math.floor(f), math.floor(g)) + Vector3.new(0,6,0), workspace)
+	
+				for i,v in game.Workspace:GetDescendants() do
+	
+					if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
+	
+						SetName(v,"particle")
+	
+						-- ðŸ”¹ pilih salah satu ID acak dari daftar di atas
+	
+						local id = ids[math.random(1, #ids)]
+	
+						SpawnDecal(v,Enum.NormalId.Front)
+	
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+	
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SetTrans(v,1)
+	
+						Resize(v,Vector3.new(7,7,0.1),v.CFrame)
+	
+						SetLocked(v,true)
+	
+						while wait(0.01) do
+	
+							MovePart(v,CFrame.new(v.CFrame.x,v.CFrame.y + 3,v.CFrame.z))
+	
+						end
+	
+					end
+	
+				end
+	
+			end)
+	
+		end
+	end)
+end;
+task.spawn(C_26);
 -- StarterGui.Petertiffon.ImageLabel.LocalScript
-local function C_1a()
-local script = G2L["1a"];
+local function C_27()
+local script = G2L["27"];
 	script.Parent.Active=true
 	script.Parent.Draggable=true
 end;
-task.spawn(C_1a);
+task.spawn(C_27);
 -- StarterGui.Petertiffon.ImageLabel.TextLabel.LocalScript
-local function C_1c()
-local script = G2L["1c"];
+local function C_29()
+local script = G2L["29"];
 	script.Parent.Text="==Version: "..script.Value.Value.." =="
 end;
-task.spawn(C_1c);
+task.spawn(C_29);
 
 return G2L["1"], require;
