@@ -143,6 +143,7 @@ G2L["d"] = Instance.new("LocalScript", G2L["b"]);
 
 -- StarterGui.Petertiffon.ImageLabel.More
 G2L["e"] = Instance.new("Frame", G2L["2"]);
+G2L["e"]["Visible"] = false;
 G2L["e"]["BorderSizePixel"] = 2;
 G2L["e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["e"]["Size"] = UDim2.new(0, 233, 0, 581);
@@ -1902,13 +1903,14 @@ local script = G2L["31"];
 	 Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 	]=]
 	
-		-- Instances: 16 | Scripts: 6 | Modules: 0 | Tags: 0
+		-- Instances: 13 | Scripts: 5 | Modules: 0 | Tags: 0
 		local G2L = {};
 	
 		-- StarterGui.O.A.A
 		G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 		G2L["1"]["Name"] = [[O.A.A]];
 		G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+		G2L["1"]["ResetOnSpawn"] = false;
 	
 	
 		-- StarterGui.O.A.A.ImageLabel
@@ -1931,7 +1933,7 @@ local script = G2L["31"];
 		G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 		G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 		G2L["3"]["BackgroundTransparency"] = 0.6;
-		G2L["3"]["Size"] = UDim2.new(0, 281, 0, 37);
+		G2L["3"]["Size"] = UDim2.new(0, 281, 0, 45);
 		G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 		G2L["3"]["Text"] = [[Kill All]];
 		G2L["3"]["Position"] = UDim2.new(0.04221, 0, 0.05502, 0);
@@ -1969,10 +1971,10 @@ local script = G2L["31"];
 		G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 		G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 		G2L["7"]["BackgroundTransparency"] = 0.6;
-		G2L["7"]["Size"] = UDim2.new(0, 281, 0, 37);
+		G2L["7"]["Size"] = UDim2.new(0, 281, 0, 45);
 		G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 		G2L["7"]["Text"] = [[Explode All]];
-		G2L["7"]["Position"] = UDim2.new(0.04221, 0, 0.24919, 0);
+		G2L["7"]["Position"] = UDim2.new(0.04221, 0, 0.29312, 0);
 	
 	
 		-- StarterGui.O.A.A.ImageLabel.TextButton.LocalScript
@@ -1988,10 +1990,10 @@ local script = G2L["31"];
 		G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 		G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 		G2L["9"]["BackgroundTransparency"] = 0.6;
-		G2L["9"]["Size"] = UDim2.new(0, 281, 0, 37);
+		G2L["9"]["Size"] = UDim2.new(0, 281, 0, 45);
 		G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 		G2L["9"]["Text"] = [[Fling All]];
-		G2L["9"]["Position"] = UDim2.new(0.04221, 0, 0.45955, 0);
+		G2L["9"]["Position"] = UDim2.new(0.04221, 0, 0.55107, 0);
 	
 	
 		-- StarterGui.O.A.A.ImageLabel.TextButton.LocalScript
@@ -2007,10 +2009,10 @@ local script = G2L["31"];
 		G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 		G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 		G2L["b"]["BackgroundTransparency"] = 0.6;
-		G2L["b"]["Size"] = UDim2.new(0, 281, 0, 37);
+		G2L["b"]["Size"] = UDim2.new(0, 281, 0, 45);
 		G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 		G2L["b"]["Text"] = [[Give Lucky Block]];
-		G2L["b"]["Position"] = UDim2.new(0.04221, 0, 0.65049, 0);
+		G2L["b"]["Position"] = UDim2.new(0.04221, 0, 0.78521, 0);
 	
 	
 		-- StarterGui.O.A.A.ImageLabel.TextButton.LocalScript
@@ -2018,38 +2020,8 @@ local script = G2L["31"];
 	
 	
 	
-		-- StarterGui.O.A.A.ImageLabel.Frame
-		G2L["d"] = Instance.new("Frame", G2L["2"]);
-		G2L["d"]["BorderSizePixel"] = 0;
-		G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-		G2L["d"]["Size"] = UDim2.new(0, 69, 0, 32);
-		G2L["d"]["Position"] = UDim2.new(0.04221, 0, 0.87055, 0);
-		G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-		G2L["d"]["BackgroundTransparency"] = 0.99;
-	
-	
-		-- StarterGui.O.A.A.ImageLabel.Frame.LocalScript
-		G2L["e"] = Instance.new("LocalScript", G2L["d"]);
-	
-	
-	
-		-- StarterGui.O.A.A.ImageLabel.Loop
-		G2L["f"] = Instance.new("TextLabel", G2L["2"]);
-		G2L["f"]["BorderSizePixel"] = 0;
-		G2L["f"]["TextSize"] = 36;
-		G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-		G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-		G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-		G2L["f"]["BackgroundTransparency"] = 1;
-		G2L["f"]["Size"] = UDim2.new(0, 186, 0, 32);
-		G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-		G2L["f"]["Text"] = [[Looped]];
-		G2L["f"]["Name"] = [[Loop]];
-		G2L["f"]["Position"] = UDim2.new(0.35065, 0, 0.87055, 0);
-	
-	
 		-- StarterGui.O.A.A.ImageLabel.LocalScript
-		G2L["10"] = Instance.new("LocalScript", G2L["2"]);
+		G2L["d"] = Instance.new("LocalScript", G2L["2"]);
 	
 	
 	
@@ -2085,143 +2057,12 @@ local script = G2L["31"];
 			end)
 		end;
 		task.spawn(C_c);
-		-- StarterGui.O.A.A.ImageLabel.Frame.LocalScript
-		local function C_e()
-			local script = G2L["e"];
-			local Parent = script.Parent
-			local TweenService = game:GetService("TweenService")
-			local RunService = game:GetService("RunService")
-	
-			--------------------------------------------------------------------
-			-- CREATE SWITCH FRAME BASED ON PARENT POSITION / SIZE
-			--------------------------------------------------------------------
-			local Switch = Instance.new("Frame")
-			Switch.Name = "Switch"
-			Switch.Parent = Parent.Parent
-			Switch.Position = Parent.Position      -- use parent’s pos
-			Switch.Size = Parent.Size              -- use parent’s size
-			Switch.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-			Switch.BorderSizePixel = 0
-	
-			local Corner = Instance.new("UICorner")
-			Corner.CornerRadius = UDim.new(1, 0)
-			Corner.Parent = Switch
-	
-			--------------------------------------------------------------------
-			-- CREATE KNOB
-			--------------------------------------------------------------------
-			local Knob = Instance.new("Frame")
-			Knob.Name = "Knob"
-			Knob.Parent = Switch
-			Knob.Size = UDim2.new(0, Switch.AbsoluteSize.Y - 4, 0, Switch.AbsoluteSize.Y - 4)
-			Knob.Position = UDim2.new(0, 2, 0, 2)
-			Knob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			Knob.BorderSizePixel = 0
-	
-			local KnobCorner = Instance.new("UICorner")
-			KnobCorner.CornerRadius = UDim.new(1, 0)
-			KnobCorner.Parent = Knob
-	
-			--------------------------------------------------------------------
-			-- SWITCH STATE + LOOP SYSTEM
-			--------------------------------------------------------------------
-			local IsOn = false
-			local Loops = {} -- stores all your looping actions
-	
-			local function AddLoop(name, fn)
-				Loops[name] = {
-					Active = false,
-					Action = fn,
-					Connection = nil
-				}
-			end
-	
-			local function StartAll()
-				for _, L in pairs(Loops) do
-					if not L.Connection then
-						L.Active = true
-						L.Connection = RunService.RenderStepped:Connect(function()
-							if L.Active then
-								L.Action()
-							end
-						end)
-					end
-				end
-			end
-	
-			local function StopAll()
-				for _, L in pairs(Loops) do
-					L.Active = false
-					if L.Connection then
-						L.Connection:Disconnect()
-						L.Connection = nil
-					end
-				end
-			end
-	
-			--------------------------------------------------------------------
-			-- ANIMATION
-			--------------------------------------------------------------------
-			local function AnimateSwitch(on)
-				local knobPos
-				local color
-	
-				if on then
-					knobPos = UDim2.new(1, -Knob.AbsoluteSize.X - 2, 0, 2)
-					color = Color3.fromRGB(0, 200, 0)
-				else
-					knobPos = UDim2.new(0, 2, 0, 2)
-					color = Color3.fromRGB(60, 60, 60)
-				end
-	
-				TweenService:Create(
-					Knob,
-					TweenInfo.new(.15, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),
-					{Position = knobPos}
-				):Play()
-	
-				TweenService:Create(
-					Switch,
-					TweenInfo.new(.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),
-					{BackgroundColor3 = color}
-				):Play()
-			end
-	
-			--------------------------------------------------------------------
-			-- CLICK INPUT
-			--------------------------------------------------------------------
-			Switch.InputBegan:Connect(function(input)
-				if input.UserInputType == Enum.UserInputType.MouseButton1 then
-					IsOn = not IsOn
-					AnimateSwitch(IsOn)
-	
-					if IsOn then
-						StartAll()
-					else
-						StopAll()
-					end
-				end
-			end)
-	
-			--------------------------------------------------------------------
-			-- EXAMPLE LOOPS YOU CAN ADD
-			--------------------------------------------------------------------
-			AddLoop("Example1", function()
-				print("dziala")
-			end)
-	
-			AddLoop("Example2", function()
-				-- put ANY constant effect here
-			end)
-	
-		end;
-		task.spawn(C_e);
 		-- StarterGui.O.A.A.ImageLabel.LocalScript
-		local function C_10()
-			local script = G2L["10"];
+		local function C_d()
+			local script = G2L["d"];
 			script.Parent.Draggable=true
 		end;
-		task.spawn(C_10);
+		task.spawn(C_d);
 	
 		return G2L["1"], require;
 	end)
